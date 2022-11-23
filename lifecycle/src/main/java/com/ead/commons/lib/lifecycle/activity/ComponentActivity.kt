@@ -3,7 +3,7 @@ package com.ead.commons.lib.lifecycle.activity
 import androidx.activity.ComponentActivity
 import androidx.activity.OnBackPressedCallback
 
-fun ComponentActivity.onBackPressedNow() {
+fun ComponentActivity.onBack() {
     if(!onBackPressedDispatcher.hasEnabledCallbacks()){
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() { finish() } })
