@@ -11,7 +11,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.ead.commons.example.lifecycle.ui.theme.LifecycleTheme
-import com.ead.commons.lib.lifecycle.activity.showLongToast
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +26,6 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-        showLongToast("testing")
     }
 }
 
